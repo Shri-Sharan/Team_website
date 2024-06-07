@@ -14,7 +14,7 @@ body, h1, h2, p, ul, li, header, main, footer {
 
 /* Set basic styles for body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
@@ -22,14 +22,16 @@ body {
 
 /* Style the header */
 header {
-    background-color: #35424a;
-    color: #ffffff;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
 }
 
 header nav ul {
@@ -42,8 +44,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffffff;
+    color: #ecf0f1;
     text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Style the main content */
@@ -55,17 +62,49 @@ main section {
     margin-bottom: 20px;
 }
 
+main section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+main section p {
+    font-size: 1.1em;
+}
+
+main section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Add a new section */
+main section#new-info {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
 /* Style the footer */
 footer {
-    background-color: #35424a;
-    color: #ffffff;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 0.9em;
 }
 
+footer p {
+    margin: 0;
+}
 </style>
 </head>
 <body>
@@ -82,7 +121,7 @@ footer {
     <main>
         <section>
             <h2>About This Website</h2>
-            <p>assignment 2</p>
+            <p>This website was created as part of an assignment to demonstrate basic web design skills.</p>
         </section>
         <section>
             <h2>Features</h2>
@@ -90,11 +129,22 @@ footer {
                 <li>Clean and simple design</li>
                 <li>Responsive layout</li>
                 <li>Easy to customize</li>
+                <li>Modern look and feel</li>
+                <li>Accessible for all users</li>
+            </ul>
+        </section>
+        <section id="new-info">
+            <h2>Additional Information</h2>
+            <p>This section provides more details about the purpose and goals of the website. It includes information on the technologies used and the design principles followed.</p>
+            <ul>
+                <li>HTML5 and CSS3</li>
+                <li>Responsive Web Design</li>
+                <li>User Experience (UX) Best Practices</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Simple Website. All rights reserved.</p>
+        <p>&copy; 2024 Simple Website. All rights reserved. | Designed by Your Name</p>
     </footer>
 </body>
 </html>
